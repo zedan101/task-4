@@ -83,6 +83,7 @@ main button{
 #result{
     display: grid;
     grid-template-columns: 4fr 4fr 4fr;
+    grid-template-rows: 1fr 1fr 1fr;
     border: 1px solid #919090;
     overflow: scroll;
     padding: 0.5%;
@@ -104,12 +105,18 @@ main button{
     top: 30%;
     left: 30%;
 }
+#popUp input,#popUp select{
+    margin: 3% 0%;
+}
 #editData{
     z-index: 5;
     display: none;
     background-color: #90DDFE;
     top: 30%;
     left: 30%;
+}
+#editData input,#editData select{
+    margin: 3% 0%;
 }
 .card {
     display: flex !important;
