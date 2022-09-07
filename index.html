@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saketa</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">   
+    <link rel="stylesheet" href="./index.css">
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+</head>
+<body>
+    <section class="container">
+        <header class="row">
+            <div class="col-lg-6 d-flex justify-content-start">
+                <img class="logo" src="./saketa-logo.svg" alt="logo">
+                <div class="head-txt ms-4 mt-3 pt-3">
+                    <h2>Employee Directory</h2>
+                    <span>The ultimate People Directory Experiance</span>
+                </div>
+            </div>
+            <div class="col-lg-6 d-flex justify-content-end mt-5">
+                <h2 class="profile-name mt-3 pe-3">Weclome,<span>Andrew Philip</span></h2>
+                <img class="profile mt-1" src="./profile.png" alt="user">
+            </div>
+            <hr>
+        </header>
+        
+        <main class="row">
+            <section class="col-lg-3 filters">
+                <div class="filter-category">
+                    <h6>Departments</h6>
+                    <a href="#" onclick="Dit()">IT</a><br>
+                    <a href="#" onclick="DHr()">Human Resourse</a><br>
+                    <a href="#" onclick="DMd()">MD</a><br>
+                    <a href="#" onclick="DSales()">sales</a>
+                </div>
+                <div class="filter-category">
+                    <h6>Offices</h6>
+                    <a href="#" onclick="OSeattle()">Seattle</a><br>
+                    <a href="#" onclick="OIndia()">India</a>
+                </div>
+                <div class="filter-category">
+                    <h6>Job Titles</h6>
+                    <a href="#" onclick="JtSph()">SharePoint Practice Head</a><br>
+                    <a href="#" onclick="JtNdl()">Net Devlopment Lead</a><br>
+                    <a href="#" onclick="JtRe()">Recruiting Expert</a><br>
+                    <a href="#" onclick="JtBID()">BI Devloper</a><br>
+                    <a href="#" onclick="JtBa()">Bussiness Analyst</a>
+                </div>
+            </section>
+            <section class="col-lg-9 search-results">
+                <div class="search row">
+                   <div class="alpha-search px-0"><button class="btn btn-primary" type="submit" onclick="display()"><img src="./person.svg" alt="person"></button>
+                    <button class="btn btn-primary" type="submit" onclick="ASearch()">A</button>
+                    <button class="btn btn-primary" type="submit" onclick="BSearch()">B</button>
+                    <button class="btn btn-primary" type="submit" onclick="CSearch()">C</button>
+                    <button class="btn btn-primary" type="submit" onclick="DSearch()">D</button>
+                    <button class="btn btn-primary" type="submit" onclick="ESearch()">E</button>
+                    <button class="btn btn-primary" type="submit" onclick="FSearch()">F</button>
+                    <button class="btn btn-primary" type="submit" onclick="GSearch()">G</button>
+                    <button class="btn btn-primary" type="submit" onclick="HSearch()">H</button>
+                    <button class="btn btn-primary" type="submit" onclick="ISearch()">I</button>
+                    <button class="btn btn-primary" type="submit" onclick="JSearch()">J</button>
+                    <button class="btn btn-primary" type="submit" onclick="KSearch()">K</button>
+                    <button class="btn btn-primary" type="submit" onclick="LSearch()">L</button>
+                    <button class="btn btn-primary" type="submit" onclick="MSearch()">M</button>
+                    <button class="btn btn-primary" type="submit" onclick="NSearch()">N</button>
+                    <button class="btn btn-primary" type="submit" onclick="OSearch()">O</button>
+                    <button class="btn btn-primary" type="submit" onclick="PSearch()">P</button>
+                    <button class="btn btn-primary" type="submit" onclick="QSearch()">Q</button>
+                    <button class="btn btn-primary" type="submit" onclick="RSearch()">R</button>
+                    <button class="btn btn-primary" type="submit" onclick="SSearch()">S</button>
+                    <button class="btn btn-primary" type="submit" onclick="TSearch()">T</button>
+                    <button class="btn btn-primary" type="submit" onclick="USearch()">U</button>
+                    <button class="btn btn-primary" type="submit" onclick="VSearch()">V</button>
+                    <button class="btn btn-primary" type="submit" onclick="WSearch()">W</button>
+                    <button class="btn btn-primary" type="submit" onclick="XSearch()">X</button>
+                    <button class="btn btn-primary" type="submit" onclick="YSearch()">Y</button>
+                    <button class="btn btn-primary" type="submit" onclick="ZSearch()">Z</button></div> 
+                    <div class="sec-search row d-flex">
+                        <span class="label col-md-1 mt-1">Search</span>
+                        <input class="col-md-3" id="searchKey" onkeyup="Search()" type="text" placeholder=" &#128269 Enter Your Keyword">
+                        <button class="clear btn btn-primary me-5 col-md-1" onclick="display()" type="submit">Clear</button>
+                        <span class="label col-md-1 mt-1">Filter By</span>
+                        <select class="form-select col-md-2" aria-label="Default select example" id="filterBy">
+                        
+                            <option value="1">First Name</option>
+                            <option value="2" selected>Preferred Name</option>
+                            <option value="3">Email</option>
+                            <option value="4">Phone Number<Title></Title></option>
+                            <option value="5">Skype Id</option>
+                        </select>
+                        <button class="btn btn-primary col-md-2 add-emp" type="submit" onclick="OpenForm()">Add Employee</button>
+                    </div>
+                    <p class="mb-2 mt2 p-0">Note: Please use advance filter options to refine your search</p>
+                </div>
+                <div class="row" id="result">
+                 
+                </div>
+            </section>
+        </main>
+        <section id="popUp" class="position-absolute p-5">
+            <button type="button" class="close float-end" aria-label="Close" onclick="CloseForm()">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            <h2>Add Employees Details</h2><br>
+            <input type="text" placeholder="First Name" id="fName" value="">
+            <input class="" type="text" placeholder="Last Name" id="lName" value=""><br>
+            <input type="text" placeholder="Preffered Name" id="prfdName" value="">
+            <input type="email" name="Email" id="eMail" placeholder="Email" value=""><br>
+            
+            
+            <select class="form-select" aria-label="Default select example" id="jobTitle">
+                <option selected>Job Title</option>
+                <option value="1">SharePoint Practice Head</option>
+                <option value="2">Net Devlopment Lead</option>
+                <option value="3">Recruiting Expert</option>
+                <option value="4">BI Devloper</option>
+                <option value="5">Bussiness Analyst</option>
+              </select>
+            
+              <select class="form-select" aria-label="Default select example" id="office">
+                <option selected>Office</option>
+                <option value="1">Seattle</option>
+                <option value="2">India</option>
+            
+              </select>
+              <select class="form-select" aria-label="Default select example" id="depart">
+                <option selected>Department</option>
+                <option value="1">IT</option>
+                <option value="2">Human Resource</option>
+                <option value="3">MD</option>
+                <option value="4">sales</option>
+                
+              </select>
+            <input type="number" name="mobno" id="mobNo" placeholder="Phone Number" value="">
+            <input type="text" placeholder="Skype Id" id="skypId" value=""><br>
+            <button onclick="submit()">submit</button>
+        </section>
+    </section>
+    <script src="./index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
