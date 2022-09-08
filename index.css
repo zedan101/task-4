@@ -91,12 +91,6 @@ main button{
     padding-bottom: 3%;
     
 }
-@media (max-width: 782px) {
-    #result { grid-template-columns: repeat(2, 4fr); }
-  }
-@media (max-width: 446px) {
-    #result { grid-template-columns: repeat(1, 4fr); }
-  }
 
 #popUp{
     z-index: 5;
@@ -124,8 +118,10 @@ main button{
     object-fit: contain;
     background-color: #E9E8E8;
     padding: 1%;
-    padding-top: 5%;
+    padding-top: 2%;
+    height: 96% !important;
     border-radius: 0%;
+    border: none;
 }
 .card span{
     margin-left: 5%;
@@ -152,9 +148,32 @@ main button{
 
 .card h6{
 margin: 0%;
-font-size: 100%;
+font-size: 105%;
 }
 .card p{
     margin: 0%;
-    font-size: 80%;
+    font-size: 85%;
 }
+@media (max-width: 1200px) {
+    .card h6{
+        font-size: 100%;
+        }
+        .card p{
+            font-size: 80%;
+        }
+  }
+  @media (max-width: 782px) {
+    #result { grid-template-columns: repeat(2, 4fr); }
+    #popUp{
+      
+        top: 30%;
+        left: 15%;
+    }
+    #editData{
+        top: 30%;
+        left: 15%;
+    }
+  }
+@media (max-width: 446px) {
+    #result { grid-template-columns: repeat(1, 4fr); }
+  }

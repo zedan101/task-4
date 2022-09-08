@@ -746,7 +746,7 @@ if(off=="India"){
 function CreateCard(fname,lname,jt,dprt,idx){
   const container = document.getElementById('result');
   const content = `
-<div class="p-2 "><div id="empCard${idx}" class="card">
+<div class="p-1"><div id="empCard${idx}" class="card">
 <img src="./profile.png" alt="img">
 <span>
     <h6>${fname} ${lname}</h6>
