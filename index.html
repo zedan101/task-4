@@ -32,54 +32,54 @@
             <section class="col-lg-3 filters">
                 <div class="filter-category">
                     <h6>Departments</h6>
-                    <a href="#" onclick="Dit()">IT</a><br>
-                    <a href="#" onclick="DHr()">Human Resourse</a><br>
-                    <a href="#" onclick="DMd()">MD</a><br>
-                    <a href="#" onclick="DSales()">sales</a>
+                    <a href="#" onclick="FDepartment('IT')">IT<span id="d0"></span></a><br>
+                    <a href="#" onclick="FDepartment('Human Resource')">Human Resource<span id="d1"></span></a><br>
+                    <a href="#" onclick="FDepartment('MD')">MD <span id="d2"></span></a><br>
+                    <a href="#" onclick="FDepartment('Sales')">Sales <span id="d3"></span></a>
                 </div>
                 <div class="filter-category">
                     <h6>Offices</h6>
-                    <a href="#" onclick="OSeattle()">Seattle</a><br>
-                    <a href="#" onclick="OIndia()">India</a>
+                    <a href="#" onclick="FOffice('Seattle')">Seattle <span id="o0" ></span></a><br>
+                    <a href="#" onclick="FOffice('India')">India <span id="o1" ></span></a>
                 </div>
                 <div class="filter-category">
                     <h6>Job Titles</h6>
-                    <a href="#" onclick="JtSph()">SharePoint Practice Head</a><br>
-                    <a href="#" onclick="JtNdl()">Net Devlopment Lead</a><br>
-                    <a href="#" onclick="JtRe()">Recruiting Expert</a><br>
-                    <a href="#" onclick="JtBID()">BI Devloper</a><br>
-                    <a href="#" onclick="JtBa()">Bussiness Analyst</a>
+                    <a href="#" onclick="FJobTitle('SharePoint Practice Head')">SharePoint Practice Head <Span id="jt0" ></Span></a><br>
+                    <a href="#" onclick="FJobTitle('Net Development Lead')">Net Development Lead <span id="jt1" ></span></a><br>
+                    <a href="#" onclick="FJobTitle('Recruiting Expert')">Recruiting Expert <span id="jt2" ></span></a><br>
+                    <a href="#" onclick="FJobTitle('BI Developer')">BI Developer <span id="jt3" ></span></a><br>
+                    <a href="#" onclick="FJobTitle('Bussiness Analyst')">Bussiness Analyst <span id="jt4" ></span></a>
                 </div>
             </section>
             <section class="col-lg-9 search-results">
                 <div class="search row">
                    <div class="alpha-search px-0"><button class="btn btn-primary" type="submit" onclick="display()"><img src="./person.svg" alt="person"></button>
-                    <button class="btn btn-primary" type="submit" onclick="ASearch()">A</button>
-                    <button class="btn btn-primary" type="submit" onclick="BSearch()">B</button>
-                    <button class="btn btn-primary" type="submit" onclick="CSearch()">C</button>
-                    <button class="btn btn-primary" type="submit" onclick="DSearch()">D</button>
-                    <button class="btn btn-primary" type="submit" onclick="ESearch()">E</button>
-                    <button class="btn btn-primary" type="submit" onclick="FSearch()">F</button>
-                    <button class="btn btn-primary" type="submit" onclick="GSearch()">G</button>
-                    <button class="btn btn-primary" type="submit" onclick="HSearch()">H</button>
-                    <button class="btn btn-primary" type="submit" onclick="ISearch()">I</button>
-                    <button class="btn btn-primary" type="submit" onclick="JSearch()">J</button>
-                    <button class="btn btn-primary" type="submit" onclick="KSearch()">K</button>
-                    <button class="btn btn-primary" type="submit" onclick="LSearch()">L</button>
-                    <button class="btn btn-primary" type="submit" onclick="MSearch()">M</button>
-                    <button class="btn btn-primary" type="submit" onclick="NSearch()">N</button>
-                    <button class="btn btn-primary" type="submit" onclick="OSearch()">O</button>
-                    <button class="btn btn-primary" type="submit" onclick="PSearch()">P</button>
-                    <button class="btn btn-primary" type="submit" onclick="QSearch()">Q</button>
-                    <button class="btn btn-primary" type="submit" onclick="RSearch()">R</button>
-                    <button class="btn btn-primary" type="submit" onclick="SSearch()">S</button>
-                    <button class="btn btn-primary" type="submit" onclick="TSearch()">T</button>
-                    <button class="btn btn-primary" type="submit" onclick="USearch()">U</button>
-                    <button class="btn btn-primary" type="submit" onclick="VSearch()">V</button>
-                    <button class="btn btn-primary" type="submit" onclick="WSearch()">W</button>
-                    <button class="btn btn-primary" type="submit" onclick="XSearch()">X</button>
-                    <button class="btn btn-primary" type="submit" onclick="YSearch()">Y</button>
-                    <button class="btn btn-primary" type="submit" onclick="ZSearch()">Z</button></div> 
+                    <button class="btn btn-primary" type="submit" onclick="AlphaSearch('A')">A</button>
+                    <button class="btn btn-primary" type="submit" onclick="AlphaSearch('B')">B</button>
+                    <button class="btn btn-primary" type="submit" onclick="AlphaSearch('C')">C</button>
+                    <button class="btn btn-primary" type="submit" onclick="AlphaSearch('D')">D</button>
+                    <button class="btn btn-primary" type="submit" onclick="AlphaSearch('E')">E</button>
+                    <button class="btn btn-primary" type="submit" onclick="AlphaSearch('F')">F</button>
+                    <button class="btn btn-primary" type="submit" onclick="AlphaSearch('G')">G</button>
+                    <button class="btn btn-primary" type="submit" onclick="AlphaSearch('H')">H</button>
+                    <button class="btn btn-primary" type="submit" onclick="AlphaSearch('I')">I</button>
+                    <button class="btn btn-primary" type="submit" onclick="AlphaSearch('J')">J</button>
+                    <button class="btn btn-primary" type="submit" onclick="AlphaSearch('K')">K</button>
+                    <button class="btn btn-primary" type="submit" onclick="AlphaSearch('L')">L</button>
+                    <button class="btn btn-primary" type="submit" onclick="AlphaSearch('M')">M</button>
+                    <button class="btn btn-primary" type="submit" onclick="AlphaSearch('N')">N</button>
+                    <button class="btn btn-primary" type="submit" onclick="AlphaSearch('O')">O</button>
+                    <button class="btn btn-primary" type="submit" onclick="AlphaSearch('P')">P</button>
+                    <button class="btn btn-primary" type="submit" onclick="AlphaSearch('Q')">Q</button>
+                    <button class="btn btn-primary" type="submit" onclick="AlphaSearch('R')">R</button>
+                    <button class="btn btn-primary" type="submit" onclick="AlphaSearch('S')">S</button>
+                    <button class="btn btn-primary" type="submit" onclick="AlphaSearch('T')">T</button>
+                    <button class="btn btn-primary" type="submit" onclick="AlphaSearch('U')">U</button>
+                    <button class="btn btn-primary" type="submit" onclick="AlphaSearch('V')">V</button>
+                    <button class="btn btn-primary" type="submit" onclick="AlphaSearch('W')">W</button>
+                    <button class="btn btn-primary" type="submit" onclick="AlphaSearch('X')">X</button>
+                    <button class="btn btn-primary" type="submit" onclick="AlphaSearch('Y')">Y</button>
+                    <button class="btn btn-primary" type="submit" onclick="AlphaSearch('Z')">Z</button></div> 
                     <div class="sec-search row d-flex">
                         <span class="label col-md-1 mt-1">Search</span>
                         <input class="col-md-3" id="searchKey" onkeyup="Search()" type="text" placeholder=" &#128269 Enter Your Keyword">
@@ -102,16 +102,17 @@
                 </div>
             </section>
         </main>
-        <section id="popUp" class="position-absolute p-5">
+        <section id="popUp" class="position-absolute p-5 ">
             <button type="button" class="close float-end" aria-label="Close" onclick="CloseForm()">
                 <span aria-hidden="true">&times;</span>
               </button>
             <h2>Add Employees Details</h2><br>
-            <input type="text" placeholder="First Name" id="fName" value="">
-            <input class="" type="text" placeholder="Last Name" id="lName" value=""><br>
+            <input type="text" onkeyup="FormValidate()" placeholder="First Name" id="fName" value="">
+            <input class="" onkeyup="FormValidate()" type="text" placeholder="Last Name" id="lName" value=""><br>
+            <p id="valN"></p>
             <input type="text" placeholder="Preffered Name" id="prfdName" value="">
-            <input type="email" name="Email" id="eMail" placeholder="Email" value=""><br>
-            
+            <input type="email" onkeyup="FormValidate()" name="Email" id="eMail" placeholder="Email" value=""><br>
+            <p id="valEm"></p>
             
             <select class="form-select" aria-label="Default select example" id="jobTitle">
                 <option selected>Job Title</option>
@@ -136,7 +137,8 @@
                 <option value="4">sales</option>
                 
               </select>
-            <input type="number" name="mobno" id="mobNo" placeholder="Phone Number" value="">
+            <input type="number" onkeyup="FormValidate()" name="mobno" id="mobNo" placeholder="Phone Number" value="">
+            <p id="valMn"></p>
             <input type="text" placeholder="Skype Id" id="skypId" value=""><br>
             <button onclick="submit()">submit</button>
         </section>

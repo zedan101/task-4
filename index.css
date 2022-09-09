@@ -97,7 +97,7 @@ main button{
     display: none;
     background-color: #90DDFE;
     top: 30%;
-    left: 30%;
+    left: 40%;
 }
 #popUp input,#popUp select{
     margin: 3% 0%;
@@ -107,7 +107,7 @@ main button{
     display: none;
     background-color: #90DDFE;
     top: 30%;
-    left: 30%;
+    left: 40%;
 }
 #editData input,#editData select{
     margin: 3% 0%;
